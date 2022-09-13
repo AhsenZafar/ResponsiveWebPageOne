@@ -1,3 +1,8 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
 
 body {
     margin: 0;
@@ -5,10 +10,12 @@ body {
     font-size: 1.125rem;
     font-weight: 300;
 }
-img{
+
+img {
     max-width: 100%;
     display: block;
 }
+
 /* =================
 Typography
 ================= */
@@ -70,18 +77,19 @@ strong {
 }
 
 .article-info {
-    margin: 1.5em 0;
+    margin: 2em 0;
 }
+
 .widget-title,
 .widget-recent-post-title {
     font-size: 1rem;
 }
 
 .widget-title {
-    
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
 }
+
 
 /* =================
 Layout
@@ -103,7 +111,7 @@ header {
     background: #f8f8f8;
     padding: 2em 0;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 footer {
@@ -111,21 +119,26 @@ footer {
     color: white;
     text-align: center;
     padding: 3em 0;
+}
+
+@media (min-width: 675px) {
+    header {
+        text-align: left;
+    }
     
-@media (min-width: 675px){
-    .container{
+    .container-flex {
         flex-direction: row;
     }
-}
-
-main {
-    width: 75%;
-}
-
-aside {
-    width: 20%;
-    min-width: 200px;
-    margin-left: 1em;
+    
+    main {
+        width: 70%;
+    }
+    
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
 }
 
 /* navigation */
@@ -170,16 +183,19 @@ nav a:focus {
         margin: .5em 0;
     }
 }
+
 /* articles */
 
 .article-featured {
     border-bottom: #707070 1px solid;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
+
 .article-recent {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2em;
 }
 
 .article-recent-main {
@@ -211,12 +227,16 @@ nav a:focus {
     
     .article-image {
         order: -2;
+        min-height: 250px;
+        object-fit: cover;
+        /* object-position: left; */
     }
     
     .article-info {
         order: -1;
     }
 }
+
 /* widgets */
 
 .sidebar-widget {
