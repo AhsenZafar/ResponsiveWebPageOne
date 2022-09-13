@@ -260,3 +260,13 @@ nav a:focus {
 .widget-image {
     order: -1;
 }
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.self{
+    display: block;
+    order: -1;
+}
